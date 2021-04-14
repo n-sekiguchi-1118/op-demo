@@ -1,0 +1,9 @@
+---
+- hosts: batch
+  connection: local
+  become: yes
+  roles:
+   - basic
+   - yum
+   - efs-utils
+   - cloudwatch-logs
